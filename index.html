@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>document.documentElement.classList.add('js')</script>
   <title>[Esbós] Electricitat Samsó · Electricistes al Penedès des de 1960</title>
 <meta name="description" content="Instal·lacions d&#39;electricitat, aigua, gas, climatització, energia solar i il·luminació a Sant Sadurní d&#39;Anoia i tot el Penedès. Empresa familiar des de 1960. Tel. 93 891 09 11.">  <meta name="robots" content="noindex">
   <meta name="theme-color" content="#e20015">
@@ -15,7 +16,7 @@
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="icon" href="img/favicon-32.png" type="image/png">
   <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-  <link rel="stylesheet" href="css/estil.css?v=855da5d7">
+  <link rel="stylesheet" href="css/estil.css?v=0457701a">
   <link rel="preload" as="image" href="img/slider/940x350-4-hero.webp" fetchpriority="high">
 </head>
 <body class="pag-inici" data-boceto>
@@ -40,8 +41,10 @@
       </button>
       <nav class="menu" id="menu" aria-label="Menú">
         <ul>
-          <li><a href="index.html" aria-current="page">Inici</a></li>
+          <li class="nomes-mobil"><a href="index.html" aria-current="page">Inici</a></li>
           <li><a href="pendent.html">Serveis</a></li>
+          <li><a href="treballs.html">Treballs</a></li>
+          <li><a href="eines.html">Eines</a></li>
           <li><a href="pendent.html">Experiència</a></li>
           <li><a href="contacte.html">Contacte</a></li>
         </ul>
@@ -56,13 +59,43 @@
   <main id="contingut">
 <section class="hero">
   <img class="hero-fons" src="img/slider/940x350-4-hero.webp" alt="" width="940" height="350" fetchpriority="high">
+  <svg class="hero-circuit" viewBox="0 0 600 420" preserveAspectRatio="xMaxYMid slice" aria-hidden="true" focusable="false">
+    <path class="traca" d="M600 70 H470 L430 110 H300 L260 70 H120" pathLength="100"/>
+    <path class="pols" d="M600 70 H470 L430 110 H300 L260 70 H120" pathLength="100" style="--retard: 0.0s"/>
+    <path class="traca" d="M600 160 H520 L480 200 H360 L330 230 H180" pathLength="100"/>
+    <path class="pols" d="M600 160 H520 L480 200 H360 L330 230 H180" pathLength="100" style="--retard: 0.7s"/>
+    <path class="traca" d="M600 270 H440 L400 230 H250" pathLength="100"/>
+    <path class="pols" d="M600 270 H440 L400 230 H250" pathLength="100" style="--retard: 1.4s"/>
+    <path class="traca" d="M600 350 H500 L460 390 H280 L240 350 H90" pathLength="100"/>
+    <path class="pols" d="M600 350 H500 L460 390 H280 L240 350 H90" pathLength="100" style="--retard: 2.0999999999999996s"/>
+    <path class="traca" d="M380 0 V40 L410 70" pathLength="100"/>
+    <path class="pols" d="M380 0 V40 L410 70" pathLength="100" style="--retard: 2.8s"/>
+    <path class="traca" d="M330 420 V330 L300 300 V230" pathLength="100"/>
+    <path class="pols" d="M330 420 V330 L300 300 V230" pathLength="100" style="--retard: 3.5s"/>
+    <circle class="node" cx="120" cy="70" r="5"/>
+    <circle class="node" cx="180" cy="230" r="5"/>
+    <circle class="node" cx="250" cy="230" r="5"/>
+    <circle class="node" cx="90" cy="350" r="5"/>
+    <circle class="node" cx="410" cy="70" r="5"/>
+    <circle class="node" cx="300" cy="230" r="5"/>
+    <circle class="node" cx="470" cy="70" r="5"/>
+    <circle class="node" cx="480" cy="200" r="5"/>
+    <circle class="node" cx="460" cy="390" r="5"/>
+  </svg>
   <div class="contenidor hero-dins">
     <p class="etiqueta">Sant Sadurní d&#39;Anoia · Des de 1960</p>
-    <h1>Electricitat, aigua i climatització al Penedès</h1>
+    <h1>
+      <span class="sr">Electricitat, aigua i climatització al Penedès</span>
+      <span class="hero-titol" aria-hidden="true">
+        Instal·lacions de
+        <span class="rotador" data-rotador><span class="rot-paraula actiu">electricitat</span><span class="rot-paraula">aigua</span><span class="rot-paraula">climatització</span><span class="rot-paraula">energia solar</span><span class="rot-paraula">il·luminació</span></span>
+        al Penedès
+      </span>
+    </h1>
     <p class="hero-text">Empresa familiar amb 66 anys d&#39;experiència. Treballem per a particulars, comunitats de veïns i empreses de tot el Penedès.</p>
     <div class="botons">
       <a class="btn btn-primari btn-gran" href="tel:+34938910911"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>Truca&#39;ns · 93 891 09 11</span></a>
-      <a class="btn btn-contorn-blanc btn-gran" href="sollicitar-servei.html">Demana pressupost</a>
+      <a class="btn btn-contorn-blanc btn-gran" href="#avaries"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg><span>Què et passa?</span></a>
     </div>
   </div>
 </section>
@@ -70,10 +103,10 @@
 <section class="xifres" aria-label="Electricitat Samsó">
   <div class="contenidor">
     <ul class="xifres-llista">
-      <li><strong>1960</strong><span>Any de fundació</span></li>
-      <li><strong>66</strong><span>Anys d&#39;experiència</span></li>
-      <li><strong>8</strong><span>Especialitats</span></li>
-      <li><strong>2</strong><span>Generacions al capdavant</span></li>
+      <li><strong data-compta="1960">1960</strong><span>Any de fundació</span></li>
+      <li><strong data-compta="66">66</strong><span>Anys d&#39;experiència</span></li>
+      <li><strong data-compta="8">8</strong><span>Especialitats</span></li>
+      <li><strong data-compta="2">2</strong><span>Generacions al capdavant</span></li>
     </ul>
   </div>
 </section>
@@ -110,7 +143,7 @@
     </div>
   </li>
   <li class="targeta">
-    <img src="img/climatitzacio/climatitzacio4-card.webp" width="640" height="480" alt="" loading="lazy">
+    <img src="img/slider/940x350-6-card.webp" width="640" height="480" alt="" loading="lazy">
     <div class="targeta-cos">
       <h3><a href="pendent.html">Refrigeració i climatització</a></h3>
       <p>Aire condicionat i climatització per a habitatges, oficines i naus.</p>
@@ -150,6 +183,194 @@
     </div>
   </li>
 </ul>  </div>
+</section>
+
+<section class="seccio seccio-eines">
+  <div class="contenidor">
+    <div class="seccio-cap">
+      <h2>Resol-ho en un minut</h2>
+      <p>Eines gratuïtes per saber què fer davant d&#39;una avaria o fer números abans de trucar-nos.</p>
+    </div>
+    <div class="eines-inici">
+      <div class="eina eina-avaries" id="avaries" data-avaries>
+  <div class="eina-cap">
+    <span class="eina-icona"><svg class="icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></span>
+    <div><h3 class="eina-titol">Què et passa?</h3><p>Tria el problema i et diem què pots fer ara mateix i com d&#39;urgent és.</p></div>
+  </div>
+  <p class="avaries-pregunta">Quin problema tens?</p>
+  <ul class="avaries-opcions">
+    <li>
+      <a class="avaria-opcio urg-mitja" href="#avaria-diferencial" data-avaria="diferencial" aria-controls="avaria-diferencial">
+        <span class="ao-icona"><svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg></span>
+        <span class="ao-text">Salta el diferencial o un automàtic</span>
+      </a>
+    </li>
+    <li>
+      <a class="avaria-opcio urg-mitja" href="#avaria-sense-llum" data-avaria="sense-llum" aria-controls="avaria-sense-llum">
+        <span class="ao-icona"><svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg></span>
+        <span class="ao-text">No tinc llum a casa</span>
+      </a>
+    </li>
+    <li>
+      <a class="avaria-opcio urg-alta" href="#avaria-cremat" data-avaria="cremat" aria-controls="avaria-cremat">
+        <span class="ao-icona"><svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14-.22-4.05 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg></span>
+        <span class="ao-text">Olor de cremat, espurnes o un endoll calent</span>
+<span class="ao-urg">Urgent</span>      </a>
+    </li>
+    <li>
+      <a class="avaria-opcio urg-alta" href="#avaria-fuita" data-avaria="fuita" aria-controls="avaria-fuita">
+        <span class="ao-icona"><svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg></span>
+        <span class="ao-text">Tinc una fuita d&#39;aigua</span>
+<span class="ao-urg">Urgent</span>      </a>
+    </li>
+    <li>
+      <a class="avaria-opcio urg-alta" href="#avaria-gas" data-avaria="gas" aria-controls="avaria-gas">
+        <span class="ao-icona"><svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg></span>
+        <span class="ao-text">Fa olor de gas</span>
+<span class="ao-urg">Urgent</span>      </a>
+    </li>
+    <li>
+      <a class="avaria-opcio urg-baixa" href="#avaria-aire" data-avaria="aire" aria-controls="avaria-aire">
+        <span class="ao-icona"><svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12h20"/><path d="M12 2v20"/><path d="m20 16-4-4 4-4"/><path d="m4 8 4 4-4 4"/><path d="m16 4-4 4-4-4"/><path d="m8 20 4-4 4 4"/></svg></span>
+        <span class="ao-text">L&#39;aire condicionat no refreda</span>
+      </a>
+    </li>
+    <li>
+      <a class="avaria-opcio urg-baixa" href="#avaria-nova" data-avaria="nova" aria-controls="avaria-nova">
+        <span class="ao-icona"><svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="m9 15 2 2 4-4"/></svg></span>
+        <span class="ao-text">Vull una instal·lació nova o una reforma</span>
+      </a>
+    </li>
+  </ul>
+  <section class="avaria-resultat urg-mitja" id="avaria-diferencial" tabindex="-1" aria-label="Salta el diferencial o un automàtic">
+    <div class="ar-cap">
+      <span class="ar-icona"><svg class="icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg></span>
+      <div>
+        <span class="urg-etiqueta">Convé revisar-ho aviat</span>
+        <h3>Salta el diferencial o un automàtic</h3>
+      </div>
+    </div>
+    <h4>Què pots fer ara mateix</h4>
+    <ol class="ar-passos"><li>Desendolla els aparells del circuit que ha saltat.</li><li>Torna a pujar el diferencial o l&#39;automàtic.</li><li>Endolla els aparells d&#39;un en un: si salta en endollar-ne un, el problema és aquell aparell.</li><li>Si salta amb tot desendollat, pot haver-hi una derivació a la instal·lació: no ho intentis més i truca&#39;ns.</li></ol>
+    <div class="botons">
+      <a class="btn btn-contorn" href="tel:+34938910911"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>Truca&#39;ns ara</span></a>
+      <a class="btn btn-primari" href="sollicitar-servei.html?servei=electricitat&amp;motiu=Salta%20el%20diferencial%20o%20un%20autom%C3%A0tic">Demana una visita</a>
+      <button class="btn-text" type="button" data-avaria-tornar hidden>Tria un altre problema</button>
+    </div>
+  </section>
+  <section class="avaria-resultat urg-mitja" id="avaria-sense-llum" tabindex="-1" aria-label="No tinc llum a casa">
+    <div class="ar-cap">
+      <span class="ar-icona"><svg class="icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg></span>
+      <div>
+        <span class="urg-etiqueta">Convé revisar-ho aviat</span>
+        <h3>No tinc llum a casa</h3>
+      </div>
+    </div>
+    <h4>Què pots fer ara mateix</h4>
+    <ol class="ar-passos"><li>Mira si els veïns o l&#39;enllumenat del carrer tenen llum: si no en tenen, és un tall de la companyia.</li><li>Comprova el quadre elèctric: l&#39;interruptor general, el diferencial i els automàtics han d&#39;estar amunt.</li><li>Si tot està amunt i continues sense llum, truca&#39;ns.</li></ol>
+    <div class="botons">
+      <a class="btn btn-contorn" href="tel:+34938910911"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>Truca&#39;ns ara</span></a>
+      <a class="btn btn-primari" href="sollicitar-servei.html?servei=electricitat&amp;motiu=No%20tinc%20llum%20a%20casa">Demana una visita</a>
+      <button class="btn-text" type="button" data-avaria-tornar hidden>Tria un altre problema</button>
+    </div>
+  </section>
+  <section class="avaria-resultat urg-alta" id="avaria-cremat" tabindex="-1" aria-label="Olor de cremat, espurnes o un endoll calent">
+    <div class="ar-cap">
+      <span class="ar-icona"><svg class="icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14-.22-4.05 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg></span>
+      <div>
+        <span class="urg-etiqueta">Urgent</span>
+        <h3>Olor de cremat, espurnes o un endoll calent</h3>
+      </div>
+    </div>
+    <h4>Què pots fer ara mateix</h4>
+    <ol class="ar-passos"><li>No toquis l&#39;endoll ni l&#39;aparell.</li><li>Abaixa l&#39;automàtic d&#39;aquell circuit o l&#39;interruptor general.</li><li>Si hi ha fum o foc, surt i truca al 112.</li><li>Truca&#39;ns i no tornis a connectar el circuit fins que l&#39;hàgim revisat.</li></ol>
+    <div class="botons">
+      <a class="btn btn-primari" href="tel:+34938910911"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>Truca&#39;ns ara</span></a>
+      <a class="btn btn-contorn" href="sollicitar-servei.html?servei=electricitat&amp;motiu=Olor%20de%20cremat%2C%20espurnes%20o%20un%20endoll%20calent">Demana una visita</a>
+      <button class="btn-text" type="button" data-avaria-tornar hidden>Tria un altre problema</button>
+    </div>
+  </section>
+  <section class="avaria-resultat urg-alta" id="avaria-fuita" tabindex="-1" aria-label="Tinc una fuita d&#39;aigua">
+    <div class="ar-cap">
+      <span class="ar-icona"><svg class="icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg></span>
+      <div>
+        <span class="urg-etiqueta">Urgent</span>
+        <h3>Tinc una fuita d&#39;aigua</h3>
+      </div>
+    </div>
+    <h4>Què pots fer ara mateix</h4>
+    <ol class="ar-passos"><li>Tanca la clau de pas general de l&#39;aigua.</li><li>Si l&#39;aigua arriba a endolls o aparells, abaixa l&#39;interruptor general de la llum.</li><li>Eixuga l&#39;aigua i fes fotos de la zona: ens ajudaran a valorar la reparació.</li><li>Truca&#39;ns per a una reparació urgent.</li></ol>
+    <div class="botons">
+      <a class="btn btn-primari" href="tel:+34938910911"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>Truca&#39;ns ara</span></a>
+      <a class="btn btn-contorn" href="sollicitar-servei.html?servei=aigua&amp;motiu=Tinc%20una%20fuita%20d%27aigua">Demana una visita</a>
+      <button class="btn-text" type="button" data-avaria-tornar hidden>Tria un altre problema</button>
+    </div>
+  </section>
+  <section class="avaria-resultat urg-alta" id="avaria-gas" tabindex="-1" aria-label="Fa olor de gas">
+    <div class="ar-cap">
+      <span class="ar-icona"><svg class="icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg></span>
+      <div>
+        <span class="urg-etiqueta">Urgent</span>
+        <h3>Fa olor de gas</h3>
+      </div>
+    </div>
+    <h4>Què pots fer ara mateix</h4>
+    <ol class="ar-passos"><li>No encenguis ni apaguis llums ni aparells elèctrics, i no facis servir el telèfon a dins.</li><li>Obre portes i finestres.</li><li>Tanca la clau del gas.</li><li>Surt de l&#39;habitatge i, des de fora, truca al 112 o al telèfon d&#39;urgències de la teva companyia de gas.</li></ol>
+    <div class="botons">
+      <a class="btn btn-primari" href="tel:+34938910911"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>Truca&#39;ns ara</span></a>
+      <a class="btn btn-contorn" href="sollicitar-servei.html?servei=liquids-gasos&amp;motiu=Fa%20olor%20de%20gas">Demana una visita</a>
+      <button class="btn-text" type="button" data-avaria-tornar hidden>Tria un altre problema</button>
+    </div>
+  </section>
+  <section class="avaria-resultat urg-baixa" id="avaria-aire" tabindex="-1" aria-label="L&#39;aire condicionat no refreda">
+    <div class="ar-cap">
+      <span class="ar-icona"><svg class="icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12h20"/><path d="M12 2v20"/><path d="m20 16-4-4 4-4"/><path d="m4 8 4 4-4 4"/><path d="m16 4-4 4-4-4"/><path d="m8 20 4-4 4 4"/></svg></span>
+      <div>
+        <span class="urg-etiqueta">Sense urgència</span>
+        <h3>L&#39;aire condicionat no refreda</h3>
+      </div>
+    </div>
+    <h4>Què pots fer ara mateix</h4>
+    <ol class="ar-passos"><li>Comprova que el comandament està en mode fred i a una temperatura inferior a la de l&#39;habitació.</li><li>Neteja els filtres de la unitat interior.</li><li>Mira que la unitat exterior no estigui tapada.</li><li>Si continua sense refredar, potser li falta gas o té una avaria: demana&#39;ns una revisió.</li></ol>
+    <div class="botons">
+      <a class="btn btn-contorn" href="tel:+34938910911"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>Truca&#39;ns ara</span></a>
+      <a class="btn btn-primari" href="sollicitar-servei.html?servei=refrigeracio-climatitzacio&amp;motiu=L%27aire%20condicionat%20no%20refreda">Demana una visita</a>
+      <button class="btn-text" type="button" data-avaria-tornar hidden>Tria un altre problema</button>
+    </div>
+  </section>
+  <section class="avaria-resultat urg-baixa" id="avaria-nova" tabindex="-1" aria-label="Vull una instal·lació nova o una reforma">
+    <div class="ar-cap">
+      <span class="ar-icona"><svg class="icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="m9 15 2 2 4-4"/></svg></span>
+      <div>
+        <span class="urg-etiqueta">Sense urgència</span>
+        <h3>Vull una instal·lació nova o una reforma</h3>
+      </div>
+    </div>
+    <h4>Què pots fer ara mateix</h4>
+    <ol class="ar-passos"><li>Explica&#39;ns què vols fer i on.</li><li>Et trucarem per concretar una visita.</li><li>Revisarem l&#39;espai i et farem un pressupost sense compromís.</li></ol>
+    <div class="botons">
+      <a class="btn btn-contorn" href="tel:+34938910911"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>Truca&#39;ns ara</span></a>
+      <a class="btn btn-primari" href="sollicitar-servei.html?servei=&amp;motiu=Vull%20una%20instal%C2%B7laci%C3%B3%20nova%20o%20una%20reforma">Demana una visita</a>
+      <button class="btn-text" type="button" data-avaria-tornar hidden>Tria un altre problema</button>
+    </div>
+  </section>
+</div>
+      <div class="eines-calculadores">
+        <a class="eina-targeta" href="eines.html#solar">
+          <span class="eina-icona eina-icona-sol"><svg class="icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg></span>
+          <h3>Calculadora solar</h3>
+          <p>Quant podries estalviar amb plaques fotovoltaiques?</p>
+          <span class="enllac-fletxa">Obre l&#39;eina <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+        </a>
+        <a class="eina-targeta" href="eines.html#potencia">
+          <span class="eina-icona"><svg class="icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/></svg></span>
+          <h3>Calculadora de potència</h3>
+          <p>Quina potència elèctrica necessites contractar?</p>
+          <span class="enllac-fletxa">Obre l&#39;eina <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+        </a>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="seccio seccio-crema">
@@ -238,11 +459,45 @@
         </a>
       </li>
     </ul>
-    <p class="centrat"><a class="btn btn-contorn-blanc" href="pendent.html">Tots els serveis</a></p>
+    <p class="centrat"><a class="btn btn-contorn-blanc" href="treballs.html"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.09-3.09a2 2 0 0 0-2.82 0L6 21"/></svg><span>Veure tots els treballs</span></a></p>
   </div>
 </section>
 
-<section class="seccio seccio-petita">
+<section class="seccio">
+  <div class="contenidor faq-graella">
+    <div class="seccio-cap">
+      <h2>Preguntes freqüents</h2>
+    </div>
+    <div class="faq">
+      <details open>
+        <summary>Feu butlletins i legalitzacions elèctriques?<span class="faq-icona" aria-hidden="true"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5v14"/></svg></span></summary>
+        <p>Sí. Ens ocupem de la legalització de les instal·lacions elèctriques davant d&#39;ECA i de preparar les memòries tècniques necessàries.</p>
+      </details>
+      <details>
+        <summary>Teniu servei d&#39;urgències?<span class="faq-icona" aria-hidden="true"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5v14"/></svg></span></summary>
+        <p>Sí. Si tens una avaria urgent, truca&#39;ns al 93 891 09 11.</p>
+      </details>
+      <details>
+        <summary>Treballeu per a comunitats de veïns i empreses?<span class="faq-icona" aria-hidden="true"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5v14"/></svg></span></summary>
+        <p>Sí. Fem instal·lacions i contractes de manteniment per a comunitats de veïns, empreses, cellers i naus industrials, i també per a particulars.</p>
+      </details>
+      <details>
+        <summary>Quina zona cobriu?<span class="faq-icona" aria-hidden="true"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5v14"/></svg></span></summary>
+        <p>Som a Sant Sadurní d&#39;Anoia i treballem a tot el Penedès.</p>
+      </details>
+      <details>
+        <summary>Demanar pressupost em compromet a alguna cosa?<span class="faq-icona" aria-hidden="true"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5v14"/></svg></span></summary>
+        <p>No. El pressupost és sense compromís: revisem el que necessites i t&#39;expliquem les opcions.</p>
+      </details>
+      <details>
+        <summary>Instal·leu plaques solars a habitatges?<span class="faq-icona" aria-hidden="true"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5v14"/></svg></span></summary>
+        <p>Sí, instal·lem plaques fotovoltaiques i solars tant per a particulars com per a empreses. Pots fer-te una idea de l&#39;estalvi amb la nostra calculadora solar.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="seccio seccio-petita seccio-crema">
   <div class="contenidor associacions">
     <h2 class="associacions-titol">Membres de</h2>
     <ul>
@@ -291,6 +546,8 @@
         <h2 class="peu-titol">Seccions</h2>
         <ul class="peu-llista peu-links">
           <li><a href="index.html">Inici</a></li>
+          <li><a href="treballs.html">Treballs</a></li>
+          <li><a href="eines.html">Eines</a></li>
           <li><a href="pendent.html">Experiència</a></li>
           <li><a href="sollicitar-servei.html">Demana pressupost</a></li>
           <li><a href="contacte.html">Contacte</a></li>
@@ -324,6 +581,6 @@
     <button class="lb-boto lb-seg" type="button" data-lightbox-seg aria-label="Següent"><svg class="icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
   </dialog>
 
-  <script src="js/main.js?v=855da5d7" defer></script>
+  <script src="js/main.js?v=0457701a" defer></script>
 </body>
 </html>
